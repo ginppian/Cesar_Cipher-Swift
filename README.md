@@ -4,10 +4,10 @@ Cesar Cipher Swift
 ```swift
 //
 //  Cesar.swift
-//  serasera
+//  
 //
 //  Created by Gmo Ginppian on 16/05/18.
-//  Copyright © 2018 BUAP. All rights reserved.
+//  Copyright © 2018 Ginppian. All rights reserved.
 //
 
 import Foundation
