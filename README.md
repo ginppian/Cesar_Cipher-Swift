@@ -127,13 +127,13 @@ public class Cesar {
 Just drag and drop and we add it like this:
 
 <p align="center">
-	<img src="imgs/addFramework.png" width="271" height="233">
+	<img src="imgs/addFramework.png" width="542" height="466">
 </p>
 
 ## Example
 
 <p align="center">
-	<img src="imgs/example.png" width="258" height="459">
+	<img src="imgs/example.png" width="516" height="918">
 </p>
 
 
