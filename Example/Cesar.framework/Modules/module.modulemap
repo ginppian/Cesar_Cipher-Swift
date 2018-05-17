@@ -1,0 +1,11 @@
+framework module Cesar {
+  umbrella header "Cesar.h"
+
+  export *
+  module * { export * }
+}
+
+module Cesar.Swift {
+    header "Cesar-Swift.h"
+    requires objc
+}

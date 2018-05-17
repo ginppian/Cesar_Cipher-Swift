@@ -1,6 +1,8 @@
 Cesar Cipher Swift 
 ==
 
+In this case we create a dynamic library or .framework for swift with Cesar Cipher.
+
 ```swift
 //
 //  Cesar.swift
@@ -120,6 +122,29 @@ public class Cesar {
 }
 ```
 
+## Add Framework
+
+Just drag and drop and we add it like this:
+
+<p align="center">
+	<img src="imgs/addFramework.png" width="271" height="233">
+</p>
+
+## Example
+
+<p align="center">
+	<img src="imgs/example.png" width="258" height="459">
+</p>
+
+
 ## Font
 
 * <a href="https://www.agreatdaytocode.com/caesar-chiper-in-swift/">Caesar cipher in Swift by Aaron A</a>
+
+* <a href="https://www.raywenderlich.com/126365/ios-frameworks-tutorial">Creating and Distributing iOS Frameworks by Michael Katz</a>
+
+## About
+
+David G. López<br>
+17/05/2018<br>
+@ginppian
