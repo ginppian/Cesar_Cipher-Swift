@@ -4,17 +4,19 @@ Cesar Cipher Swift
 ```swift
 //
 //  Cesar.swift
-//  
+//  Cesar
 //
 //  Created by Gmo Ginppian on 16/05/18.
-//  Copyright © 2018 Ginppian. All rights reserved.
+//  Copyright © 2018 BUAP. All rights reserved.
 //
 
 import Foundation
 
-class Cesar {
+public class Cesar {
     
     let alphabetList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4","5", "6", "7", "8", "9", "0", "-", "."]
+    
+    public init() {}
 
     /// Removes repeated elements. Example input: abbbc - output: abc
     fileprivate func uniquekey(keyword: String) -> String {
@@ -79,14 +81,14 @@ class Cesar {
         return (encryption: encryption, decryption: decryption)
     }
     
-    func encrypt(text: String, keyword: String) -> String {
+    public func encrypt(text: String, keyword: String) -> String {
         let text = text.lowercased()
         let key = uniquekey(keyword: keyword)
         let alphabet = shiftAlphabetList(key: key)
         let map = mapMessage(reversed: alphabet).encryption
-
+        
         var encrypted = String()
-
+        
         for character in text {
             if character == " " { encrypted.append(":") }
             if let string = map[String(character)] {
@@ -95,15 +97,15 @@ class Cesar {
         }
         return encrypted.uppercased()
     }
-
-    func decrypt(text: String, keyword: String) -> String {
+    
+    public func decrypt(text: String, keyword: String) -> String {
         let text = text.lowercased()
         let key = uniquekey(keyword: keyword)
         let alphabet = shiftAlphabetList(key: key)
         let map = mapMessage(reversed: alphabet).decryption
-
+        
         var decrypted = String()
-
+        
         for character in text {
             if character == ":" {
                 decrypted.append(" ")

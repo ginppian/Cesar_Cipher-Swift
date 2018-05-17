@@ -8,10 +8,12 @@
 
 import Foundation
 
-class Cesar {
+public class Cesar {
     
     let alphabetList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4","5", "6", "7", "8", "9", "0", "-", "."]
     
+    public init() {}
+
     /// Removes repeated elements. Example input: abbbc - output: abc
     fileprivate func uniquekey(keyword: String) -> String {
         var string = String()
@@ -75,7 +77,7 @@ class Cesar {
         return (encryption: encryption, decryption: decryption)
     }
     
-    func encrypt(text: String, keyword: String) -> String {
+    public func encrypt(text: String, keyword: String) -> String {
         let text = text.lowercased()
         let key = uniquekey(keyword: keyword)
         let alphabet = shiftAlphabetList(key: key)
@@ -92,7 +94,7 @@ class Cesar {
         return encrypted.uppercased()
     }
     
-    func decrypt(text: String, keyword: String) -> String {
+    public func decrypt(text: String, keyword: String) -> String {
         let text = text.lowercased()
         let key = uniquekey(keyword: keyword)
         let alphabet = shiftAlphabetList(key: key)
